@@ -1,6 +1,10 @@
 # Spanish Conjugator 🇪🇸
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Imperial-iGEM/DJANGO-Assembly-Methods/Django%20CI)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Benedict-Carling/spanish-conjugator)
 ![GitHub search hit counter](https://img.shields.io/github/search/Benedict-Carling/spanish-conjugator/goto)
+![GitHub top language](https://img.shields.io/github/languages/top/Benedict-Carling/spanish-conjugator)
+![GitHub](https://img.shields.io/github/license/Benedict-Carling/spanish-conjugator)
+
 
 A class Conjugator containing a function conjugate which conjugates spanish verbs by tense, mood and pronoun. 
 
