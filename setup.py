@@ -23,6 +23,10 @@ setup(
     extras_require={
         "dev": [
             "pytest>=6.0.1",
+            "check-manifest>=0.42"
         ],
-    }
+    },
+    url="https://github.com/Benedict-Carling/spanish-conjugator",
+    author="Benedict Carling",
+    author_email="bencarling1@gmail.com"
 )
