@@ -1,5 +1,5 @@
 # -*- coding: iso-8859-15 -*-
-class Spanish_conjugator():
+class Conjugator():
 
     # Present Conjugations
 
@@ -26,6 +26,5 @@ class Spanish_conjugator():
 
 # Example test to run -- later to be turned into unit tests
 #conjugator = Spanish_conjugator()
-print(Spanish_conjugator().conjugate('hablar','imperfect','imperitive','yo'))
-print(Spanish_conjugator().conjugate('charlar','imperfect','imperitive','yo'))
-print(Spanish_conjugator().conjugate('comer','imperfect','imperitive','yo'))
+print(Conjugator().conjugate('hablar','imperfect','imperitive','yo'))
+print(Conjugator().conjugate('charlar','imperfect','imperitive','yo'))
