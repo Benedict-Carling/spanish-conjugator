@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='spanishconjugator',
     version='0.0.3',
@@ -14,5 +17,12 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Operating System :: OS Independent"
-    ]
+    ],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    extras_require={
+        "dev": [
+            "pytest>=6.0.1",
+        ],
+    }
 )
