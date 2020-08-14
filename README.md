@@ -15,8 +15,52 @@ imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','imperitive'
 print(imperfect_conjugation)
 ```
 
+## Notice
+Currently only the imperfect/imperitive/yo pipeline is complete
 
-# Developing
-if you would like to help develop spanishconjugator, here is how your install developer dependencies;
-run the following inside your virtual enviroment.
+
+## Developing
+if you would like to help develop spanishconjugator, follow succeeding code
+
+Whilst in command line create a folder in which you would like to work (name only reccommended)
+
+`$ mkdir spanish_conjugator_enviroment`
+
+change directory into the enviroment you have just made
+
+`$ cd spanish_conjugator_enviroment`
+
+install virtualenv
+
+`$ pip install virtualenv`
+
+create a virtual enviroment from path of python3
+
+`$ virtualenv -p $(which python3) my_venv`
+
+activate virtual enviroment
+
+`$ source my_venv/bin/activate`
+
+> tip: once you want to disactivate your virtual enviroment simply run `$ deactivate`
+
+Clone Spanish-Conjugator
+
+`$ git clone https://github.com/Benedict-Carling/spanish-conjugator.git`
+
+Install developer dependencies for unit test e.g pytest and for other library tools
+
 `pip install -e .[dev]`
+
+## Developing - Testing
+
+We have chosen to use the library pytest for our unit test
+At this point in the developing guide you can check the code works by running it against out current unit tests located in the `/tests` folder
+
+`$ pytest`
+
+## Developing - Submission
+
+to submit code to this repositry please fork and submit a pull request 🚀
+
+
