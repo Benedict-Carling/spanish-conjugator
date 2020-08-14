@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='spanishconjugator',
-    version='0.0.5',
+    version='0.0.6',
     description='A python library to conjugate spanish words with parameters tense, mood and pronoun',
     py_modules=["spanishconjugator"],
     package_dir={'': 'src'},
