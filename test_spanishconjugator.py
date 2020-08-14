@@ -1,4 +1,4 @@
-from spanishconjugator import Conjugator
+from src.spanishconjugator import Conjugator
 
 def test_imperfect_imperitive_yo_ar():
     expected = "hablaba"
