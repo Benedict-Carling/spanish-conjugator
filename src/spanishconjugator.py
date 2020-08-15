@@ -23,11 +23,73 @@ class Conjugator():
                         except:
                             conjugation = root_verb[:-2] + "ía"
                         return conjugation
+                if pronoun == "tu":
+                    if root_verb[-2:] == "ar":
+                        try:
+                            conjugation = irregulars[root_verb][index][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "abas"
+                        return conjugation
+                    if root_verb[-2:] == "er" or "ir":
+                        try:
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "ías"
+                        return conjugation
+                if pronoun == "usted":
+                    if root_verb[-2:] == "ar":
+                        try:
+                            conjugation = irregulars[root_verb][index][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "aba"
+                        return conjugation
+                    if root_verb[-2:] == "er" or "ir":
+                        try:
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "ía"
+                        return conjugation
+                if pronoun == "nosotros":
+                    if root_verb[-2:] == "ar":
+                        try:
+                            conjugation = irregulars[root_verb][index][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "ábamos"
+                        return conjugation
+                    if root_verb[-2:] == "er" or "ir":
+                        try:
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "íamos"
+                        return conjugation
+                if pronoun == "vosotros":
+                    if root_verb[-2:] == "ar":
+                        try:
+                            conjugation = irregulars[root_verb][index][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "abais"
+                        return conjugation
+                    if root_verb[-2:] == "er" or "ir":
+                        try:
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "íais"
+                        return conjugation
+                if pronoun == "ustedes":
+                    if root_verb[-2:] == "ar":
+                        try:
+                            conjugation = irregulars[root_verb][index][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "aban"
+                        return conjugation
+                    if root_verb[-2:] == "er" or "ir":
+                        try:
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
+                        except:
+                            conjugation = root_verb[:-2] + "ían"
+                        return conjugation
 
         return conjugation
 
-# Example test to run -- later to be turned into unit tests
-#conjugator = Spanish_conjugator()
-print(Conjugator().conjugate('hablar','imperfect','imperitive','yo'))
-print(Conjugator().conjugate('charlar','imperfect','imperitive','yo'))
-print(Conjugator().conjugate('ver','imperfect','imperitive','yo'))
+output = Conjugator().conjugate('hablar','imperfect','imperitive','nosotros')
+print(output)
