@@ -17,10 +17,9 @@ Example python usage; the `conjugate` function of the `Conjugator` Class takes 4
 from spanishconjugator import Conjugator
 imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicitive','yo')
 print(imperfect_conjugation)
+>>> hablaba
 ```
 
-## Notice
-Currently only the imperfect/indicitive/yo pipeline is complete
 
 
 ## Developing
