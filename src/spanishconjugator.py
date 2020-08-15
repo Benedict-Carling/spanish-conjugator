@@ -9,7 +9,7 @@ class Conjugator():
         pronoun = pronoun.lower()
 
         if tense == "imperfect":
-            if mood == "imperitive":
+            if mood == "indicitive":
                 if pronoun == "yo":
                     if root_verb[-2:] == "ar":
                         try:
@@ -91,5 +91,5 @@ class Conjugator():
 
         return conjugation
 
-output = Conjugator().conjugate('hablar','imperfect','imperitive','nosotros')
+output = Conjugator().conjugate('hablar','imperfect','indicitive','nosotros')
 print(output)

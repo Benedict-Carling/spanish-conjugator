@@ -15,12 +15,12 @@ A class Conjugator containing a function conjugate which conjugates spanish verb
 Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively  
 ```python
 from spanishconjugator import Conjugator
-imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','imperitive','yo')
+imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicitive','yo')
 print(imperfect_conjugation)
 ```
 
 ## Notice
-Currently only the imperfect/imperitive/yo pipeline is complete
+Currently only the imperfect/indicitive/yo pipeline is complete
 
 
 ## Developing

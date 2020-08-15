@@ -2,7 +2,7 @@
 
 irregulars = {
     'ir':{
-        'imperitive':{
+        'indicitive':{
             'imperfect':{
                 'yo':'iba',
                 'tu':'ibas',
@@ -14,7 +14,7 @@ irregulars = {
         }
     },
     'ser':{
-        'imperitive':{
+        'indicitive':{
             'imperfect':{
                 'yo':'era',
                 'tu':'eras',
@@ -26,7 +26,7 @@ irregulars = {
         }
     },
     'ver':{
-        'imperitive':{
+        'indicitive':{
             'imperfect':{
                 'yo':'veía',
                 'tu':'veías',

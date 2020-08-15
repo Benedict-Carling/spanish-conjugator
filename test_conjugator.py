@@ -1,34 +1,34 @@
 # -*- coding: iso-8859-15 -*-
 from src.spanishconjugator import Conjugator
 
-def test_imperfect_imperitive_yo_ar():
+def test_imperfect_indicitive_yo_ar():
     expected = "hablaba"
-    assert Conjugator().conjugate('hablar','imperfect','imperitive','yo') == expected
+    assert Conjugator().conjugate('hablar','imperfect','indicitive','yo') == expected
 
-def test_imperfect_imperitive_tu_ar():
+def test_imperfect_indicitive_tu_ar():
     expected = "hablabas"
-    assert Conjugator().conjugate('hablar','imperfect','imperitive','tu') == expected
+    assert Conjugator().conjugate('hablar','imperfect','indicitive','tu') == expected
 
-def test_imperfect_imperitive_usted_ar():
+def test_imperfect_indicitive_usted_ar():
     expected = "hablaba"
-    assert Conjugator().conjugate('hablar','imperfect','imperitive','usted') == expected
+    assert Conjugator().conjugate('hablar','imperfect','indicitive','usted') == expected
 
-def test_imperfect_imperitive_nosotros_ar():
+def test_imperfect_indicitive_nosotros_ar():
     expected = 'hablábamos'
-    assert str(Conjugator().conjugate('hablar','imperfect','imperitive','nosotros')) == expected
+    assert str(Conjugator().conjugate('hablar','imperfect','indicitive','nosotros')) == expected
 
-def test_imperfect_imperitive_vosotros_ar():
+def test_imperfect_indicitive_vosotros_ar():
     expected = "hablabais"
-    assert Conjugator().conjugate('hablar','imperfect','imperitive','vosotros') == expected
+    assert Conjugator().conjugate('hablar','imperfect','indicitive','vosotros') == expected
 
-def test_imperfect_imperitive_ustedes_ar():
+def test_imperfect_indicitive_ustedes_ar():
     expected = "hablaban"
-    assert Conjugator().conjugate('hablar','imperfect','imperitive','ustedes') == expected
+    assert Conjugator().conjugate('hablar','imperfect','indicitive','ustedes') == expected
 
-def test_imperfect_imperitive_yo_ar_3():
+def test_imperfect_indicitive_yo_ar_3():
     expected = "charlaba"
-    assert Conjugator().conjugate('charlar','imperfect','imperitive','yo') == expected
+    assert Conjugator().conjugate('charlar','imperfect','indicitive','yo') == expected
 
-def test_imperfect_imperitive_yo_ar_4():
+def test_imperfect_indicitive_yo_ar_4():
     expected = "era"
-    assert Conjugator().conjugate('ser','imperfect','imperitive','yo') == expected
+    assert Conjugator().conjugate('ser','imperfect','indicitive','yo') == expected
