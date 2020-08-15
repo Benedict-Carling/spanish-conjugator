@@ -137,4 +137,7 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# windows 
+.vscode/
+
 # End of https://www.toptal.com/developers/gitignore/api/python
