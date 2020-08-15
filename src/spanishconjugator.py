@@ -15,7 +15,7 @@ class Conjugator():
                 if pronoun == "yo":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "o"
                         return conjugation
@@ -34,7 +34,7 @@ class Conjugator():
                 if pronoun == "tu":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "as"
                         return conjugation
@@ -53,7 +53,7 @@ class Conjugator():
                 if pronoun == "usted":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "a"
                         return conjugation
@@ -72,7 +72,7 @@ class Conjugator():
                 if pronoun == "nosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "amos"
                         return conjugation
@@ -91,7 +91,7 @@ class Conjugator():
                 if pronoun == "vosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "áis"
                         return conjugation
@@ -110,7 +110,7 @@ class Conjugator():
                 if pronoun == "ustedes":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "an"
                         return conjugation
@@ -134,7 +134,7 @@ class Conjugator():
                 if pronoun == "yo":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "aba"
                         return conjugation
@@ -147,7 +147,7 @@ class Conjugator():
                 if pronoun == "tu":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "abas"
                         return conjugation
@@ -160,7 +160,7 @@ class Conjugator():
                 if pronoun == "usted":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "aba"
                         return conjugation
@@ -173,7 +173,7 @@ class Conjugator():
                 if pronoun == "nosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "ábamos"
                         return conjugation
@@ -186,7 +186,7 @@ class Conjugator():
                 if pronoun == "vosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "abais"
                         return conjugation
@@ -199,7 +199,7 @@ class Conjugator():
                 if pronoun == "ustedes":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "aban"
                         return conjugation
@@ -216,7 +216,7 @@ class Conjugator():
                 if pronoun == "yo":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "é"
                         return conjugation
@@ -229,7 +229,7 @@ class Conjugator():
                 if pronoun == "tu":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "aste"
                         return conjugation
@@ -242,7 +242,7 @@ class Conjugator():
                 if pronoun == "usted":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "ó"
                         return conjugation
@@ -255,7 +255,7 @@ class Conjugator():
                 if pronoun == "nosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "amos"
                         return conjugation
@@ -268,7 +268,7 @@ class Conjugator():
                 if pronoun == "vosotros":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "asteis"
                         return conjugation
@@ -281,7 +281,7 @@ class Conjugator():
                 if pronoun == "ustedes":
                     if root_verb[-2:] == "ar":
                         try:
-                            conjugation = irregulars[root_verb][index][pronoun]
+                            conjugation = irregulars[root_verb][mood][tense][pronoun]
                         except:
                             conjugation = root_verb[:-2] + "aron"
                         return conjugation
