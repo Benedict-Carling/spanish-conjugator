@@ -1,5 +1,6 @@
 # -*- coding: iso-8859-15 -*-
 from src.spanishconjugator import Conjugator
+from src.irregulars import irregulars
 
 def test_imperfect_indicitive_yo_ar():
     expected = "hablaba"
