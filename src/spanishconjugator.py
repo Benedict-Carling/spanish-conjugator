@@ -1,7 +1,47 @@
 # -*- coding: iso-8859-15 -*-
-from irregulars import irregulars
-class Conjugator():
+# ------------------- Irregulars ------------------
+irregulars = {
+    'ir':{
+        'indicitive':{
+            'imperfect':{
+                'yo':'iba',
+                'tu':'ibas',
+                'usted':'iba',
+                'nosotros':'íbamos',
+                'vosotros':'ibais',
+                'ustedes':'iban'
+            }
+        }
+    },
+    'ser':{
+        'indicitive':{
+            'imperfect':{
+                'yo':'era',
+                'tu':'eras',
+                'usted':'era',
+                'nosotros':'éramos',
+                'vosotros':'erais',
+                'ustedes':'eran'    
+            }
+        }
+    },
+    'ver':{
+        'indicitive':{
+            'imperfect':{
+                'yo':'veía',
+                'tu':'veías',
+                'usted':'veía',
+                'nosotros':'veíamos',
+                'vosotros':'veíais',
+                'ustedes':'veían'
+            }
+        }
+    },
+}
 
+# ----------------- Conjugator
+
+class Conjugator():
 
     def conjugate(self,root_verb,tense,mood,pronoun):
         tense = tense.lower()
