@@ -1,7 +1,7 @@
 # Spanish Conjugator 🇪🇸
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Imperial-iGEM/DJANGO-Assembly-Methods/Django%20CI)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Benedict-Carling/spanish-conjugator)
-![GitHub search hit counter](https://img.shields.io/github/search/Benedict-Carling/spanish-conjugator/goto)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/spanishconjugator)
 ![GitHub top language](https://img.shields.io/github/languages/top/Benedict-Carling/spanish-conjugator)
 ![GitHub](https://img.shields.io/github/license/Benedict-Carling/spanish-conjugator)
 
