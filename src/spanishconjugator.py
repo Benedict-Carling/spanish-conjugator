@@ -3,6 +3,14 @@
 irregulars = {
     'ir':{
         'indicitive':{
+            'present':{
+                'yo':'voy',
+                'tu':'vas',
+                'usted':'va',
+                'nosotros':'vamos',
+                'vosotros':'vais',
+                'ustedes':'van'
+            },
             'imperfect':{
                 'yo':'iba',
                 'tu':'ibas',
@@ -10,11 +18,27 @@ irregulars = {
                 'nosotros':'íbamos',
                 'vosotros':'ibais',
                 'ustedes':'iban'
+            },
+            'preterite':{
+                'yo':'fui',
+                'tu':'fuiste',
+                'usted':'fue',
+                'nosotros':'fuimos',
+                'vosotros':'fuisteis',
+                'ustedes':'fueron'
             }
         }
     },
     'ser':{
         'indicitive':{
+            'present':{
+                'yo':'soy',
+                'tu':'eres',
+                'usted':'es',
+                'nosotros':'somos',
+                'vosotros':'sois',
+                'ustedes':'son'    
+            },
             'imperfect':{
                 'yo':'era',
                 'tu':'eras',
@@ -22,6 +46,14 @@ irregulars = {
                 'nosotros':'éramos',
                 'vosotros':'erais',
                 'ustedes':'eran'    
+            },
+            'preterite':{
+                'yo':'fui',
+                'tu':'fuiste',
+                'usted':'fue',
+                'nosotros':'fuimos',
+                'vosotros':'fuisteis',
+                'ustedes':'fueron'
             }
         }
     },
