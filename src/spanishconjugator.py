@@ -3,7 +3,7 @@ from tenses.indicitive.preterite import indicitive_preterite
 from tenses.indicitive.present import indicitive_present
 from tenses.indicitive.imperfect import indicitive_imperfect
 # ------------------- Irregulars ------------------
-from irregulars import irregulars
+from irregulars.irregular_dict import irregulars_dictionary
 
 # ----------------- Conjugator --------------------
 
@@ -19,26 +19,29 @@ class Conjugator():
         if tense == "present":
             if mood == "indicitive":
                 try:
-                    conjugation = irregulars[root_verb][mood][tense][pronoun]
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
                 except:
                     conjugation = indicitive_present(root_verb, pronoun)
+                return conjugation
 
 # ----------------------------------- Imperfect Indicitive ----------------------------------- #
 
         if tense == "imperfect":
             if mood == "indicitive":
                 try:
-                    conjugation = irregulars[root_verb][mood][tense][pronoun]
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
                 except:
                     conjugation = indicitive_imperfect(root_verb, pronoun)
+                return conjugation
 
 # ----------------------------------- Preterite Indicitive ----------------------------------- #
         if tense == "preterite":
             if mood == "indicitive":
                 try:
-                    conjugation = irregulars[root_verb][mood][tense][pronoun]
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
                 except:
                     conjugation = indicitive_preterite(root_verb, pronoun)
+                return conjugation
 
 # ----------------------------------- Future Simple Indicitive ----------------------------------- #
         if tense == "future":
@@ -337,3 +340,5 @@ class Conjugator():
         
 
         return conjugation
+
+print(Conjugator().conjugate('ser','imperfect','indicitive','yo'))

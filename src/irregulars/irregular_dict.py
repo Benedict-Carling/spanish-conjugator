@@ -1,6 +1,5 @@
 # -*- coding: iso-8859-15 -*-
- 
-irregulars = {
+irregulars_dictionary = {
     'ir':{
         'indicitive':{
             'present':{
