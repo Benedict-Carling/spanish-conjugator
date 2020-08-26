@@ -2,6 +2,9 @@
 from tenses.indicitive.preterite import indicitive_preterite
 from tenses.indicitive.present import indicitive_present
 from tenses.indicitive.imperfect import indicitive_imperfect
+from tenses.indicitive.future import indicitive_future
+from tenses.indicitive.present_perfect import indicitive_present_perfect
+from tenses.indicitive.past_perfect import indicitive_past_perfect
 # ------------------- Irregulars ------------------
 from irregulars.irregular_dict import irregulars_dictionary
 
@@ -46,299 +49,30 @@ class Conjugator():
 # ----------------------------------- Future Simple Indicitive ----------------------------------- #
         if tense == "future":
             if mood == "indicitive":
-                if pronoun == "yo":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "é"
-                        return conjugation
-                if pronoun == "tu":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "ás"
-                        return conjugation
-                if pronoun == "usted":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "á"
-                        return conjugation
-                if pronoun == "nosotros":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "emos"
-                        return conjugation
-                if pronoun == "vosotros":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "éis"
-                        return conjugation
-                if pronoun == "ustedes":
-                    if root_verb[-2:] == "ar" or "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb + "án"
-                        return conjugation
-# ----------------------------------- imperfect Simple Indicitive ----------------------------------- #
-
-        if tense == "imperfect":
-            if mood == "indicitive":
-                if pronoun == "yo":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "aba"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ía"
-                        return conjugation
-                if pronoun == "tu":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "abas"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ías"
-                        return conjugation
-                if pronoun == "usted":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "aba"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ía"
-                        return conjugation
-                if pronoun == "nosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ábamos"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "íamos"
-                        return conjugation
-                if pronoun == "vosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "abais"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "íais"
-                        return conjugation
-                if pronoun == "ustedes":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "aban"
-                        return conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ían"
-                        return conjugation
-
+                try:
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                except:
+                    conjugation = indicitive_future(root_verb, pronoun)
+                return conjugation
+                
 # ----------------------------------- Present Perfect Compound Tense ----------------------------- #
-
         if tense == "present_perfect":
             if mood == "indicitive":
-                if pronoun == "yo":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "he " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "he " + conjugation
-                if pronoun == "tu":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "has " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "has " + conjugation
-                if pronoun == "usted":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "ha " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "ha " + conjugation
-                if pronoun == "nosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "hemos " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "hemos " + conjugation
-                if pronoun == "vosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "habéis " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "habéis " + conjugation
-                if pronoun == "ustedes":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "han " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "han " + conjugation
-        
+                try:
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                except:
+                    conjugation = indicitive_present_perfect(root_verb, pronoun)
+                return conjugation
+                
 # ----------------------------------- Past Perfect Compound Tense ----------------------------- #
 
         if tense == "past_perfect":
             if mood == "indicitive":
-                if pronoun == "yo":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "había " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "había " + conjugation
-                if pronoun == "tu":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "habías " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "habías " + conjugation
-                if pronoun == "usted":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "había " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "había " + conjugation
-                if pronoun == "nosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "habíamos " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "habíamos " + conjugation
-                if pronoun == "vosotros":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "habíais " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "habíais " + conjugation
-                if pronoun == "ustedes":
-                    if root_verb[-2:] == "ar":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ado"
-                        return "habían " + conjugation
-                    if root_verb[-2:] == "er" or "ir":
-                        try:
-                            conjugation = irregulars[root_verb][mood][tense][pronoun]
-                        except:
-                            conjugation = root_verb[:-2] + "ido"
-                        return "habían " + conjugation
-        
-        
-
-        return conjugation
-
-print(Conjugator().conjugate('ser','imperfect','indicitive','yo'))
+                try:
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                except:
+                    conjugation = indicitive_past_perfect(root_verb, pronoun)
+                return conjugation
+            
+# ----------------------------------- Catch missed conjugations
+        return "Error - verb not found"
