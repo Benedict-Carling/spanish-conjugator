@@ -106,3 +106,7 @@ def test_future_indicitive_vosotros_ar():
 def test_future_indicitive_ustedes_ar():
     expected = "hablarán"
     assert Conjugator().conjugate('hablar','future','indicitive','ustedes') == expected
+
+def test_future_indicitive_ustedes_second_exp():
+    expected = "charlarán"
+    assert Conjugator().conjugate('charlar','future','indicitive','ustedes') == expected
