@@ -410,3 +410,4 @@ class Conjugator():
                             conjugation = root_verb + "án"
                         return conjugation
         return conjugation
+        
