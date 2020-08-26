@@ -5,6 +5,7 @@ from tenses.indicitive.imperfect import indicitive_imperfect
 from tenses.indicitive.future import indicitive_future
 from tenses.indicitive.present_perfect import indicitive_present_perfect
 from tenses.indicitive.past_perfect import indicitive_past_perfect
+from tenses.indicitive.past_anterior import indicitive_past_anterior
 # ------------------- Irregulars ------------------
 from irregulars.irregular_dict import irregulars_dictionary
 
@@ -74,5 +75,16 @@ class Conjugator():
                     conjugation = indicitive_past_perfect(root_verb, pronoun)
                 return conjugation
             
-# ----------------------------------- Catch missed conjugations
+# ----------------------------------- Past Anterior Compound Tense ----------------------------- #
+
+        if tense == "past_anterior":
+            if mood == "indicitive":
+                try:
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                except:
+                    conjugation = indicitive_past_anterior(root_verb, pronoun)
+                return conjugation
+
+
+# ----------------------------------- Catch missed conjugations ------------------------------- #
         return "Error - verb not found"
