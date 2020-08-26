@@ -1,15 +1,20 @@
 # -*- coding: iso-8859-15 -*-
-from tenses.indicitive.preterite import indicitive_preterite
-from tenses.indicitive.present import indicitive_present
-from tenses.indicitive.imperfect import indicitive_imperfect
-from tenses.indicitive.future import indicitive_future
-from tenses.indicitive.present_perfect import indicitive_present_perfect
-from tenses.indicitive.past_perfect import indicitive_past_perfect
-from tenses.indicitive.past_anterior import indicitive_past_anterior
-# ------------------- Irregulars ------------------
+
+# --------------------------------- Importing Tenses From Files ---------------------------- #
+
+from tenses.indicitive.preterite        import indicitive_preterite
+from tenses.indicitive.present          import indicitive_present
+from tenses.indicitive.imperfect        import indicitive_imperfect
+from tenses.indicitive.future           import indicitive_future
+from tenses.indicitive.present_perfect  import indicitive_present_perfect
+from tenses.indicitive.past_perfect     import indicitive_past_perfect
+from tenses.indicitive.past_anterior    import indicitive_past_anterior
+from tenses.indicitive.future_perfect   import indicitive_future_perfect
+
+# --------------------------------- Irregulars --------------------------------------------- #
 from irregulars.irregular_dict import irregulars_dictionary
 
-# ----------------- Conjugator --------------------
+# --------------------------------- Conjugator --------------------------------------------- #
 
 class Conjugator():
 
@@ -23,52 +28,64 @@ class Conjugator():
             return conjugation
 
         except:
-# ----------------------------------- Present Indicitive ----------------------------------- #
+
+# --------------------------------- Present Indicitive ------------------------------------- #
 
             if tense == "present":
                 if mood == "indicitive":
                     conjugation = indicitive_present(root_verb, pronoun)
                     return conjugation
 
-# ----------------------------------- Imperfect Indicitive ----------------------------------- #
+# --------------------------------- Imperfect Indicitive ----------------------------------- #
 
             if tense == "imperfect":
                 if mood == "indicitive":
                     conjugation = indicitive_imperfect(root_verb, pronoun)
                     return conjugation
 
-# ----------------------------------- Preterite Indicitive ----------------------------------- #
+# --------------------------------- Preterite Indicitive ----------------------------------- #
+            
             if tense == "preterite":
                 if mood == "indicitive":
                     conjugation = indicitive_preterite(root_verb, pronoun)
                     return conjugation
 
-# ----------------------------------- Future Simple Indicitive ----------------------------------- #
+# --------------------------------- Future Simple Indicitive ------------------------------- #
+            
             if tense == "future":
                 if mood == "indicitive":
                     conjugation = indicitive_future(root_verb, pronoun)
                     return conjugation
                     
-# ----------------------------------- Present Perfect Compound Tense ----------------------------- #
+# --------------------------------- Present Perfect Compound Tense -------------------------- #
+            
             if tense == "present_perfect":
                 if mood == "indicitive":
                     conjugation = indicitive_present_perfect(root_verb, pronoun)
                     return conjugation
                     
-# ----------------------------------- Past Perfect Compound Tense ----------------------------- #
+# --------------------------------- Past Perfect Compound Tense ----------------------------- #
 
             if tense == "past_perfect":
                 if mood == "indicitive":
                     conjugation = indicitive_past_perfect(root_verb, pronoun)
                     return conjugation
                 
-# ----------------------------------- Past Anterior Compound Tense ----------------------------- #
+# --------------------------------- Past Anterior Compound Tense ---------------------------- #
 
             if tense == "past_anterior":
                 if mood == "indicitive":
                     conjugation = indicitive_past_anterior(root_verb, pronoun)
                     return conjugation
 
+# --------------------------------- Future Perfect Compound Tense --------------------------- #
 
-# ----------------------------------- Catch missed conjugations ------------------------------- #
+            if tense == "future_perfect":
+                if mood == "indicitive":
+                    conjugation = indicitive_future_perfect(root_verb, pronoun)
+                    return conjugation
+
+
+# --------------------------------- Catch Missed Conjugations ------------------------------- #
+
         return "Error - verb not found"
