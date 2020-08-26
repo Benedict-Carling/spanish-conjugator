@@ -2,20 +2,20 @@
 
 # --------------------------------- Importing Tenses From Files ---------------------------- #
 
-from tenses.indicitive.preterite            import indicitive_preterite
-from tenses.indicitive.present              import indicitive_present
-from tenses.indicitive.imperfect            import indicitive_imperfect
-from tenses.indicitive.future               import indicitive_future
-from tenses.indicitive.present_perfect      import indicitive_present_perfect
-from tenses.indicitive.past_perfect         import indicitive_past_perfect
-from tenses.indicitive.past_anterior        import indicitive_past_anterior
-from tenses.indicitive.future_perfect       import indicitive_future_perfect
 
-from tenses.conditional.simple_conditional  import conditional_simple_conditional
+from .tenses.indicitive.preterite            import indicitive_preterite
+from .tenses.indicitive.present              import indicitive_present
+from .tenses.indicitive.imperfect            import indicitive_imperfect
+from .tenses.indicitive.future               import indicitive_future
+from .tenses.indicitive.present_perfect      import indicitive_present_perfect
+from .tenses.indicitive.past_perfect         import indicitive_past_perfect
+from .tenses.indicitive.past_anterior        import indicitive_past_anterior
+from .tenses.indicitive.future_perfect       import indicitive_future_perfect
+
+from .tenses.conditional.simple_conditional  import conditional_simple_conditional
 
 # --------------------------------- Irregulars --------------------------------------------- #
-
-from irregulars.irregular_dict import irregulars_dictionary
+from .irregulars.irregular_dict import irregulars_dictionary
 
 # --------------------------------- Conjugator --------------------------------------------- #
 
