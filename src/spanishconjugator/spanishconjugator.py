@@ -18,72 +18,56 @@ class Conjugator():
         mood = mood.lower()
         pronoun = pronoun.lower()
 
+        try: 
+            conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+            return conjugation
+
+        except:
 # ----------------------------------- Present Indicitive ----------------------------------- #
 
-        if tense == "present":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "present":
+                if mood == "indicitive":
                     conjugation = indicitive_present(root_verb, pronoun)
-                return conjugation
+                    return conjugation
 
 # ----------------------------------- Imperfect Indicitive ----------------------------------- #
 
-        if tense == "imperfect":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "imperfect":
+                if mood == "indicitive":
                     conjugation = indicitive_imperfect(root_verb, pronoun)
-                return conjugation
+                    return conjugation
 
 # ----------------------------------- Preterite Indicitive ----------------------------------- #
-        if tense == "preterite":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "preterite":
+                if mood == "indicitive":
                     conjugation = indicitive_preterite(root_verb, pronoun)
-                return conjugation
+                    return conjugation
 
 # ----------------------------------- Future Simple Indicitive ----------------------------------- #
-        if tense == "future":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "future":
+                if mood == "indicitive":
                     conjugation = indicitive_future(root_verb, pronoun)
-                return conjugation
-                
+                    return conjugation
+                    
 # ----------------------------------- Present Perfect Compound Tense ----------------------------- #
-        if tense == "present_perfect":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "present_perfect":
+                if mood == "indicitive":
                     conjugation = indicitive_present_perfect(root_verb, pronoun)
-                return conjugation
-                
+                    return conjugation
+                    
 # ----------------------------------- Past Perfect Compound Tense ----------------------------- #
 
-        if tense == "past_perfect":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "past_perfect":
+                if mood == "indicitive":
                     conjugation = indicitive_past_perfect(root_verb, pronoun)
-                return conjugation
-            
+                    return conjugation
+                
 # ----------------------------------- Past Anterior Compound Tense ----------------------------- #
 
-        if tense == "past_anterior":
-            if mood == "indicitive":
-                try:
-                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                except:
+            if tense == "past_anterior":
+                if mood == "indicitive":
                     conjugation = indicitive_past_anterior(root_verb, pronoun)
-                return conjugation
+                    return conjugation
 
 
 # ----------------------------------- Catch missed conjugations ------------------------------- #
