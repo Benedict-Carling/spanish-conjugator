@@ -1,12 +1,12 @@
 # -*- coding: iso-8859-15 -*-
-from tenses.indicitive.preterite import indicitive_preterite
-from tenses.indicitive.present import indicitive_present
-from tenses.indicitive.imperfect import indicitive_imperfect
-from tenses.indicitive.future import indicitive_future
-from tenses.indicitive.present_perfect import indicitive_present_perfect
-from tenses.indicitive.past_perfect import indicitive_past_perfect
+from .tenses.indicitive.preterite import indicitive_preterite
+from .tenses.indicitive.present import indicitive_present
+from .tenses.indicitive.imperfect import indicitive_imperfect
+from .tenses.indicitive.future import indicitive_future
+from .tenses.indicitive.present_perfect import indicitive_present_perfect
+from .tenses.indicitive.past_perfect import indicitive_past_perfect
 # ------------------- Irregulars ------------------
-from irregulars.irregular_dict import irregulars_dictionary
+from .irregulars.irregular_dict import irregulars_dictionary
 
 # ----------------- Conjugator --------------------
 
