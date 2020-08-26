@@ -20,6 +20,22 @@ print(imperfect_conjugation)
 >>> hablaba
 ```
 
+## Tenses, Moods and Pronouns implemented
+
+All pronouns are implemented
+```yo, tu, usted, nosotros, vosotros, ustedes```
+
+The following tense mood combinations are currently implemented
+```indicitive present```
+```indicitive imperfect```
+```indicitive preterite```
+```indicitive future```
+```indicitive present_perfect```
+```indicitive past_perfect```
+```indicitive past_anterior```
+```indicitive future perfect```
+```conditional simple```
+
 
 
 ## Developing
