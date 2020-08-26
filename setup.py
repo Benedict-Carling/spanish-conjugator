@@ -10,6 +10,7 @@ setup(
     packages=['spanishconjugator',
               'spanishconjugator.tenses',
               'spanishconjugator.tenses.indicitive',
+              'spanishconjugator.tenses.conditional',
               'spanishconjugator.irregulars'],
     package_dir={'spanishconjugator': 'src/spanishconjugator'},
     classifiers = [
