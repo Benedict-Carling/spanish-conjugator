@@ -1,6 +1,8 @@
 # -*- coding: iso-8859-15 -*-
 from src.spanishconjugator import Conjugator
 
+# ----------------------------------- imperfect Indicitive ----------------------------------- #
+
 def test_imperfect_indicitive_yo_ar():
     expected = "hablaba"
     assert Conjugator().conjugate('hablar','imperfect','indicitive','yo') == expected
@@ -25,6 +27,8 @@ def test_imperfect_indicitive_ustedes_ar():
     expected = "hablaban"
     assert Conjugator().conjugate('hablar','imperfect','indicitive','ustedes') == expected
 
+# ----------------------------------- Present Indicitive ----------------------------------- #
+
 def test_present_indicitive_yo_ar():
     expected = "hablo"
     assert Conjugator().conjugate('hablar','present','indicitive','yo') == expected
@@ -48,6 +52,8 @@ def test_present_indicitive_vosotros_ar():
 def test_present_indicitive_ustedes_ar():
     expected = "hablan"
     assert Conjugator().conjugate('hablar','present','indicitive','ustedes') == expected
+
+# ----------------------------------- Imperfect Indicitive ----------------------------------- #
 
 def test_imperfect_indicitive_yo_ar_3():
     expected = "charlaba"
@@ -110,3 +116,105 @@ def test_future_indicitive_ustedes_ar():
 def test_future_indicitive_ustedes_second_exp():
     expected = "charlarán"
     assert Conjugator().conjugate('charlar','future','indicitive','ustedes') == expected
+
+
+# ------------------------------ Present Perfect Compound Tense ------------------------------- #
+
+def test_present_perfect_indicitive_yo_ar():
+    expected = "he hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','yo') == expected
+
+def test_present_perfect_indicitive_tu_ar():
+    expected = "has hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','tu') == expected
+
+def test_present_perfect_indicitive_usted_ar():
+    expected = "ha hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','usted') == expected
+
+def test_present_perfect_indicitive_nosotros_ar():
+    expected = "hemos hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','nosotros') == expected
+
+def test_present_perfect_indicitive_vosotros_ar():
+    expected = "habéis hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','vosotros') == expected
+
+def test_present_perfect_indicitive_ustedes_ar():
+    expected = "han hablado"
+    assert Conjugator().conjugate('hablar','present_perfect','indicitive','ustedes') == expected
+
+def test_present_perfect_indicitive_yo_er():
+    expected = "he bebido"
+    assert Conjugator().conjugate('beber','present_perfect','indicitive','yo') == expected
+
+def test_present_perfect_indicitive_tu_ir():
+    expected = "has vivido"
+    assert Conjugator().conjugate('vivir','present_perfect','indicitive','tu') == expected
+
+def test_present_perfect_indicitive_usted_er():
+    expected = "ha bebido"
+    assert Conjugator().conjugate('beber','present_perfect','indicitive','usted') == expected
+
+def test_present_perfect_indicitive_nosotros_ir():
+    expected = "hemos vivido"
+    assert Conjugator().conjugate('vivir','present_perfect','indicitive','nosotros') == expected
+
+def test_present_perfect_indicitive_vosotros_er():
+    expected = "habéis bebido"
+    assert Conjugator().conjugate('beber','present_perfect','indicitive','vosotros') == expected
+
+def test_present_perfect_indicitive_ustedes_ir():
+    expected = "han vivido"
+    assert Conjugator().conjugate('vivir','present_perfect','indicitive','ustedes') == expected
+
+
+# ------------------------------ Past Perfect Compound Tense ------------------------------- #
+
+def test_past_perfect_indicitive_yo_ar():
+    expected = "había hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','yo') == expected
+
+def test_past_perfect_indicitive_tu_ar():
+    expected = "habías hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','tu') == expected
+
+def test_past_perfect_indicitive_usted_ar():
+    expected = "había hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','usted') == expected
+
+def test_past_perfect_indicitive_nosotros_ar():
+    expected = "habíamos hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','nosotros') == expected
+
+def test_past_perfect_indicitive_vosotros_ar():
+    expected = "habíais hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','vosotros') == expected
+
+def test_past_perfect_indicitive_ustedes_ar():
+    expected = "habían hablado"
+    assert Conjugator().conjugate('hablar','past_perfect','indicitive','ustedes') == expected
+
+def test_past_perfect_indicitive_yo_er():
+    expected = "había bebido"
+    assert Conjugator().conjugate('beber','past_perfect','indicitive','yo') == expected
+
+def test_past_perfect_indicitive_tu_ir():
+    expected = "habías vivido"
+    assert Conjugator().conjugate('vivir','past_perfect','indicitive','tu') == expected
+
+def test_past_perfect_indicitive_usted_er():
+    expected = "había bebido"
+    assert Conjugator().conjugate('beber','past_perfect','indicitive','usted') == expected
+
+def test_past_perfect_indicitive_nosotros_ir():
+    expected = "habíamos vivido"
+    assert Conjugator().conjugate('vivir','past_perfect','indicitive','nosotros') == expected
+
+def test_past_perfect_indicitive_vosotros_er():
+    expected = "habíais bebido"
+    assert Conjugator().conjugate('beber','past_perfect','indicitive','vosotros') == expected
+
+def test_past_perfect_indicitive_ustedes_ir():
+    expected = "habían vivido"
+    assert Conjugator().conjugate('vivir','past_perfect','indicitive','ustedes') == expected
