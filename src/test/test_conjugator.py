@@ -1,5 +1,6 @@
 # -*- coding: iso-8859-15 -*-
-from src.spanishconjugator import Conjugator
+import spanishconjugator
+from spanishconjugator.spanishconjugator import Conjugator
 
 # ----------------------------------- imperfect Indicitive ----------------------------------- #
 
