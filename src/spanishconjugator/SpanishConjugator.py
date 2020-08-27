@@ -161,6 +161,7 @@ class Conjugator():
             if tense == "future_perfect":
                 if mood == "subjunctive":
                     conjugation = subjunctive_future_perfect(root_verb, pronoun)
+                    return conjugation
 
 #---------------------------------- Imperfect Subjunctive -------------------------------------- #
 
