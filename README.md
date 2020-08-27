@@ -25,18 +25,62 @@ print(imperfect_conjugation)
 All pronouns are implemented
 ```yo, tu, usted, nosotros, vosotros, ustedes```
 
-The following tense mood combinations are currently implemented
-```indicitive present```
-```indicitive imperfect```
-```indicitive preterite```
-```indicitive future```
-```indicitive present_perfect```
-```indicitive past_perfect```
-```indicitive past_anterior```
-```indicitive future perfect```
-```conditional simple```
+All moods currently implemented are
+```indicitive, conditional```
 
+All tenses currently implemented are
+```present, imperfect, preterite, future, present_perfect, past_anterior, future_perfect, conditional_simple```
 
+Exaple usage of different moods/tenses with hablar and yo
+
+### Indicitive Present
+
+```python
+Conjugator().conjugate('hablar','present','indicitive','yo')
+>>> hablo
+```
+### Indicitive Imperfect
+
+```python
+Conjugator().conjugate('hablar','imperfect','indicitive','yo')
+>>> hablaba
+```
+### Indicitive Preterite
+
+```python
+Conjugator().conjugate('hablar','preterite','indicitive','yo')
+>>> hablé
+```
+### Indicitive Future
+
+```python
+Conjugator().conjugate('hablar','future','indicitive','yo')
+>>> hablaré
+```
+### Indicitive Present_Perfect
+
+```python
+Conjugator().conjugate('hablar','present_perfect','indicitive','yo')
+>>> he hablado
+```
+### Indicitive Past_Anterior
+
+```python
+Conjugator().conjugate('hablar','past_anterior','indicitive','yo')
+>>> hube hablado
+```
+### Indicitive Future_Perfect
+
+```python
+Conjugator().conjugate('hablar','future_perfect','indicitive','yo')
+>>> habré hablado
+```
+### Conditional Simple
+
+```python
+Conjugator().conjugate('hablar','simple_conditional','conditional','yo')
+>>> hablaría
+```
 
 ## Developing
 if you would like to help develop spanishconjugator, follow succeeding code
