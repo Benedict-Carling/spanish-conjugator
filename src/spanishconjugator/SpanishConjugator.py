@@ -17,6 +17,9 @@ from spanishconjugator.tenses.imperative.affirmative          import affirmative
 from spanishconjugator.tenses.imperative.negative             import negative
 
 from spanishconjugator.tenses.subjunctive.present             import subjunctive_present
+from spanishconjugator.tenses.subjunctive.imperfect           import subjunctive_imperfect
+from spanishconjugator.tenses.subjunctive.imperfect_se        import subjunctive_imperfect_se
+from spanishconjugator.tenses.subjunctive.future              import subjunctive_future
 
 # --------------------------------- Irregulars --------------------------------------------- #
 from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
@@ -134,6 +137,27 @@ class Conjugator():
             if tense == "present":
                 if mood == "subjunctive":
                     conjugation = subjunctive_present(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Imperfect Subjunctive -------------------------------------- #
+
+            if tense == "imperfect":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_imperfect(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- imperfect se Subjunctive -------------------------------------- #
+
+            if tense == "imperfect_se":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_imperfect_se(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Future Subjunctive -------------------------------------- #
+
+            if tense == "future":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_future(root_verb, pronoun)
                     return conjugation
 
 # --------------------------------- Catch Missed Conjugations ------------------------------- #
