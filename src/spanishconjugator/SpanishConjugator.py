@@ -17,6 +17,9 @@ from spanishconjugator.tenses.imperative.affirmative          import affirmative
 from spanishconjugator.tenses.imperative.negative             import negative
 
 from spanishconjugator.tenses.subjunctive.present             import subjunctive_present
+from spanishconjugator.tenses.subjunctive.present_perfect     import subjunctive_present_perfect
+from spanishconjugator.tenses.subjunctive.pluperfect          import subjunctive_pluperfect
+from spanishconjugator.tenses.subjunctive.future_perfect      import subjunctive_future_perfect
 from spanishconjugator.tenses.subjunctive.imperfect           import subjunctive_imperfect
 from spanishconjugator.tenses.subjunctive.imperfect_se        import subjunctive_imperfect_se
 from spanishconjugator.tenses.subjunctive.future              import subjunctive_future
@@ -132,12 +135,32 @@ class Conjugator():
 
 # --------------------------------- The Subjunctive ----------------------------------------- #
 
-#---------------------------------- Present Subjunctive -------------------------------------- #
+#---------------------------------- Present Subjunctive ------------------------------------- #
 
             if tense == "present":
                 if mood == "subjunctive":
                     conjugation = subjunctive_present(root_verb, pronoun)
                     return conjugation
+
+#---------------------------------- Present Perfect Subjunctive ----------------------------- #
+
+            if tense == "present_perfect":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_present_perfect(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Pluperfect Subjunctive ---------------------------------- #
+
+            if tense == "pluperfect":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_pluperfect(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Future Perfect Subjunctive ------------------------------ #
+
+            if tense == "future_perfect":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_future_perfect(root_verb, pronoun)
 
 #---------------------------------- Imperfect Subjunctive -------------------------------------- #
 
