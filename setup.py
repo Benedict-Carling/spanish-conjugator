@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setup(
     name='spanishconjugator',
-    version='2.1.13',
+    version='2.1.19',
     description='A python library to conjugate spanish words with parameters tense, mood and pronoun',
-    packages=['spanishconjugatorclass',
+    packages=['spanishconjugator',
               'spanishconjugator.tenses',
-              'spanishconjugator.tenses.indicitive',
               'spanishconjugator.tenses.conditional',
+              'spanishconjugator.tenses.indicitive',
               'spanishconjugator.irregulars'],
-    package_dir={'spanishconjugator': 'src/spanishconjugator'},
+    package_dir={'': 'src'},
     classifiers = [
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",

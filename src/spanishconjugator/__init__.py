@@ -1,1 +1,2 @@
-from spanishconjugator import Conjugator
+import spanishconjugator.SpanishConjugator
+from spanishconjugator.SpanishConjugator import Conjugator
