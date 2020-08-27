@@ -14,7 +14,7 @@ A class Conjugator containing a function conjugate which conjugates spanish verb
 ## Example usage
 Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively  
 ```python
-from spanishconjugator.spanishconjugator import Conjugator
+from spanishconjugator import Conjugator
 imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicitive','yo')
 print(imperfect_conjugation)
 >>> hablaba
