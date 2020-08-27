@@ -11,6 +11,8 @@ from spanishconjugator.tenses.indicitive.past_anterior        import indicitive_
 from spanishconjugator.tenses.indicitive.future_perfect       import indicitive_future_perfect
 
 from spanishconjugator.tenses.conditional.simple_conditional  import conditional_simple_conditional
+from spanishconjugator.tenses.conditional.perfect             import conditional_perfect
+
 
 # --------------------------------- Irregulars --------------------------------------------- #
 from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
@@ -96,6 +98,13 @@ class Conjugator():
             if tense == "simple_conditional":
                 if mood == "conditional":
                     conjugation = conditional_simple_conditional(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Perfect Conditional -------------------------------------- #
+
+            if tense == "perfect":
+                if mood == "conditional":
+                    conjugation = conditional_perfect(root_verb, pronoun)
                     return conjugation
 
 
