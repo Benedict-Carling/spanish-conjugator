@@ -81,6 +81,48 @@ Conjugator().conjugate('hablar','future_perfect','indicitive','yo')
 Conjugator().conjugate('hablar','simple_conditional','conditional','yo')
 >>> hablaría
 ```
+### Conditional Perfect
+
+```python
+Conjugator().conjugate('hablar','perfect','conditional','yo')
+>>> habría hablado
+```
+### Imperitive Afferative
+
+```python
+Conjugator().conjugate('hablar','affirmative','imperitive','tu')
+>>> habla
+```
+### Imperitive Negative
+
+```python
+Conjugator().conjugate('hablar','negative','imperitive','tu')
+>>> hables
+```
+### Subjunctive Present
+
+```python
+Conjugator().conjugate('hablar','present','subjunctive','yo')
+>>> hable
+```
+### Subjunctive Imperfect
+
+```python
+Conjugator().conjugate('hablar','imperfect','subjunctive','yo')
+>>> hablara
+```
+### Subjunctive Imperfect_se
+
+```python
+Conjugator().conjugate('hablar','imperfect_se','subjunctive','yo')
+>>> hablase
+```
+### Subjunctive Future
+
+```python
+Conjugator().conjugate('hablar','future','subjunctive','yo')
+>>> hablare
+```
 
 ## Developing
 if you would like to help develop spanishconjugator, follow succeeding code
