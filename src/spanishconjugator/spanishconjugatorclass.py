@@ -1,21 +1,19 @@
 # -*- coding: iso-8859-15 -*-
 
 # --------------------------------- Importing Tenses From Files ---------------------------- #
+from spanishconjugator.tenses.indicitive.preterite            import indicitive_preterite
+from spanishconjugator.tenses.indicitive.present              import indicitive_present
+from spanishconjugator.tenses.indicitive.imperfect            import indicitive_imperfect
+from spanishconjugator.tenses.indicitive.future               import indicitive_future
+from spanishconjugator.tenses.indicitive.present_perfect      import indicitive_present_perfect
+from spanishconjugator.tenses.indicitive.past_perfect         import indicitive_past_perfect
+from spanishconjugator.tenses.indicitive.past_anterior        import indicitive_past_anterior
+from spanishconjugator.tenses.indicitive.future_perfect       import indicitive_future_perfect
 
-
-from .tenses.indicitive.preterite            import indicitive_preterite
-from .tenses.indicitive.present              import indicitive_present
-from .tenses.indicitive.imperfect            import indicitive_imperfect
-from .tenses.indicitive.future               import indicitive_future
-from .tenses.indicitive.present_perfect      import indicitive_present_perfect
-from .tenses.indicitive.past_perfect         import indicitive_past_perfect
-from .tenses.indicitive.past_anterior        import indicitive_past_anterior
-from .tenses.indicitive.future_perfect       import indicitive_future_perfect
-
-from .tenses.conditional.simple_conditional  import conditional_simple_conditional
+from spanishconjugator.tenses.conditional.simple_conditional  import conditional_simple_conditional
 
 # --------------------------------- Irregulars --------------------------------------------- #
-from .irregulars.irregular_dict import irregulars_dictionary
+from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
 
 # --------------------------------- Conjugator --------------------------------------------- #
 

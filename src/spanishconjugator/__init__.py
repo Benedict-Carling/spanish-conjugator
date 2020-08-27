@@ -1,0 +1,1 @@
+from spanishconjugator import Conjugator
