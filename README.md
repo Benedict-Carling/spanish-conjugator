@@ -123,7 +123,7 @@ At this point in the developing guide you can check the code works by running it
 `$ pytest`
 
 output should show the different tenses implemented should pass their unit tests as below.(27/08/2020)
-![alt text](https://github.com/Benedict-Carling/spanish-conjugator/blob/master/images/pytest.png?raw=true)
+![alt text](https://github.com/Benedict-Carling/spanish-conjugator/blob/master/images/pytest.gif?raw=true)
 
 ## Developing - Submission
 
