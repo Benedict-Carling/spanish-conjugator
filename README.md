@@ -78,6 +78,9 @@ At this point in the developing guide you can check the code works by running it
 
 `$ pytest`
 
+output should show the different tenses implemented should pass their unit tests as below.(27/08/2020)
+![alt text](https://github.com/Benedict-Carling/spanish-conjugator/blob/master/images/pytest.png?raw=true)
+
 ## Developing - Submission
 
 to submit code to this repositry please fork and submit a pull request 🚀
