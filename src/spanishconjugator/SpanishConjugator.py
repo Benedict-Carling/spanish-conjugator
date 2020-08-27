@@ -20,6 +20,9 @@ from spanishconjugator.tenses.subjunctive.present             import subjunctive
 from spanishconjugator.tenses.subjunctive.present_perfect     import subjunctive_present_perfect
 from spanishconjugator.tenses.subjunctive.pluperfect          import subjunctive_pluperfect
 from spanishconjugator.tenses.subjunctive.future_perfect      import subjunctive_future_perfect
+from spanishconjugator.tenses.subjunctive.imperfect           import subjunctive_imperfect
+from spanishconjugator.tenses.subjunctive.imperfect_se        import subjunctive_imperfect_se
+from spanishconjugator.tenses.subjunctive.future              import subjunctive_future
 
 # --------------------------------- Irregulars --------------------------------------------- #
 from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
@@ -158,6 +161,26 @@ class Conjugator():
             if tense == "future_perfect":
                 if mood == "subjunctive":
                     conjugation = subjunctive_future_perfect(root_verb, pronoun)
+
+#---------------------------------- Imperfect Subjunctive -------------------------------------- #
+
+            if tense == "imperfect":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_imperfect(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- imperfect se Subjunctive -------------------------------------- #
+
+            if tense == "imperfect_se":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_imperfect_se(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Future Subjunctive -------------------------------------- #
+
+            if tense == "future":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_future(root_verb, pronoun)
                     return conjugation
 
 # --------------------------------- Catch Missed Conjugations ------------------------------- #
