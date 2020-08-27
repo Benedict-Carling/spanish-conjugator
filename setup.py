@@ -11,6 +11,8 @@ setup(
               'spanishconjugator.tenses',
               'spanishconjugator.tenses.conditional',
               'spanishconjugator.tenses.indicitive',
+              'spanishconjugator.tenses.imperitive',
+              'spanishconjugator.tenses.subjunctive',
               'spanishconjugator.irregulars'],
     package_dir={'': 'src'},
     classifiers = [

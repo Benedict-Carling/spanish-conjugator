@@ -13,6 +13,10 @@ from spanishconjugator.tenses.indicitive.future_perfect       import indicitive_
 from spanishconjugator.tenses.conditional.simple_conditional  import conditional_simple_conditional
 from spanishconjugator.tenses.conditional.perfect             import conditional_perfect
 
+from spanishconjugator.tenses.imperative.affirmative          import affirmative
+from spanishconjugator.tenses.imperative.negative             import negative
+
+from spanishconjugator.tenses.subjunctive.present             import subjunctive_present
 
 # --------------------------------- Irregulars --------------------------------------------- #
 from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
@@ -107,6 +111,30 @@ class Conjugator():
                     conjugation = conditional_perfect(root_verb, pronoun)
                     return conjugation
 
+# --------------------------------- The Imperitive ----------------------------------------- #
+
+#---------------------------------- Affirmative Imperitive -------------------------------------- #
+
+            if tense == "affirmative":
+                if mood == "imperitive":
+                    conjugation = affirmative(root_verb, pronoun)
+                    return conjugation
+
+#---------------------------------- Negative Imperitive -------------------------------------- #
+
+            if tense == "negative":
+                if mood == "imperitive":
+                    conjugation = negative(root_verb, pronoun)
+                    return conjugation
+
+# --------------------------------- The Subjunctive ----------------------------------------- #
+
+#---------------------------------- Present Subjunctive -------------------------------------- #
+
+            if tense == "present":
+                if mood == "subjunctive":
+                    conjugation = subjunctive_present(root_verb, pronoun)
+                    return conjugation
 
 # --------------------------------- Catch Missed Conjugations ------------------------------- #
 
