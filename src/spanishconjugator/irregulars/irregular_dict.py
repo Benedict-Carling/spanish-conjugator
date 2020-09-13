@@ -58,6 +58,14 @@ irregulars_dictionary = {
     },
     'ver':{
         'indicitive':{
+            'present':{
+                'yo':'veo',
+                'tu':'ves',
+                'usted':'ve',
+                'nosotros':'vemos',
+                'vosotros':'veis',
+                'ustedes':'ven'
+            },
             'imperfect':{
                 'yo':'veía',
                 'tu':'veías',
