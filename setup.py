@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='spanishconjugator',
-    version='2.2.3',
+    version='2.2.1',
     description='A python library to conjugate spanish words with parameters tense, mood and pronoun',
     packages=['spanishconjugator',
               'spanishconjugator.tenses',
@@ -28,9 +28,9 @@ setup(
     long_description_content_type="text/markdown",
     extras_require={
         "dev": [
-            "pytest>=6.0.1",
-            "check-manifest>=0.42",
-            "twine>=3.2.0"
+            "pytest",
+            "check-manifest",
+            "twine"
         ],
     },
     url="https://github.com/Benedict-Carling/spanish-conjugator",
