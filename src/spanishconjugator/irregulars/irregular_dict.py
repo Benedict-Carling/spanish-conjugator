@@ -65,7 +65,7 @@ irregulars_dictionary = {
                 'nosotros':'vemos',
                 'vosotros':'veis',
                 'ustedes':'ven'
-            }
+            },
             'imperfect':{
                 'yo':'veía',
                 'tu':'veías',
