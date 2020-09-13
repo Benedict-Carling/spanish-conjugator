@@ -73,6 +73,14 @@ irregulars_dictionary = {
                 'nosotros':'veíamos',
                 'vosotros':'veíais',
                 'ustedes':'veían'
+            },
+            'preterite':{
+                'yo':'vi',
+                'tu':'vistes',
+                'usted':'viste',
+                'nosotros':'vimos',
+                'vosotros':'visteis',
+                'ustedes':'vieron'
             }
         }
     },
