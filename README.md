@@ -169,6 +169,6 @@ output should show the different tenses implemented should pass their unit tests
 
 ## Developing - Submission
 
-to submit code to this repositry please fork and submit a pull request 🚀
+To submit code to this repositry please fork and submit a pull request 🚀
 
 
