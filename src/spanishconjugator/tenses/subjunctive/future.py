@@ -10,10 +10,10 @@ def subjunctive_future(root_verb, pronoun):
             
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
-            conjugation = root_verb[:-2] + "ases"
+            conjugation = root_verb[:-2] + "ares"
             return conjugation
         if root_verb[-2:] == "er" or "ir":
-            conjugation = root_verb[:-2] + "ieses"
+            conjugation = root_verb[:-2] + "ieres"
             return conjugation
 
     if pronoun == "usted":
@@ -23,7 +23,6 @@ def subjunctive_future(root_verb, pronoun):
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "iere"
             return conjugation
-
     if pronoun == "nosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "áremos"
