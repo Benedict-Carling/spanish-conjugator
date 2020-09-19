@@ -9,7 +9,7 @@ def test_future_subjunctive_yo_ar():
     assert Conjugator().conjugate('hablar','future','subjunctive','yo') == expected
 
 def test_future_subjunctive_tu_ar():
-    expected = "hablases"
+    expected = "hablares"
     assert Conjugator().conjugate('hablar','future','subjunctive','tu') == expected
 
 def test_future_subjunctive_usted_ar():
