@@ -171,4 +171,7 @@ output should show the different tenses implemented should pass their unit tests
 
 To submit code to this repositry please fork and submit a pull request 🚀
 
+# Alternative Versions
+Check out the Javascript npm version of the library if you are working in a node or browser enviroment
 
+https://github.com/Benedict-Carling/spanish-conjugatorjs
