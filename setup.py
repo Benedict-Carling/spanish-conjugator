@@ -10,7 +10,7 @@ setup(
     packages=['spanishconjugator',
               'spanishconjugator.tenses',
               'spanishconjugator.tenses.conditional',
-              'spanishconjugator.tenses.indicitive',
+              'spanishconjugator.tenses.indicative',
               'spanishconjugator.tenses.imperative',
               'spanishconjugator.tenses.subjunctive',
               'spanishconjugator.irregulars'],

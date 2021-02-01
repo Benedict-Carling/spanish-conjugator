@@ -1,7 +1,7 @@
 # -*- coding: iso-8859-15 -*-
 irregulars_dictionary = {
     'ir':{
-        'indicitive':{
+        'indicative':{
             'present':{
                 'yo':'voy',
                 'tu':'vas',
@@ -29,7 +29,7 @@ irregulars_dictionary = {
         }
     },
     'ser':{
-        'indicitive':{
+        'indicative':{
             'present':{
                 'yo':'soy',
                 'tu':'eres',
@@ -57,7 +57,7 @@ irregulars_dictionary = {
         }
     },
     'ver':{
-        'indicitive':{
+        'indicative':{
             'present':{
                 'yo':'veo',
                 'tu':'ves',

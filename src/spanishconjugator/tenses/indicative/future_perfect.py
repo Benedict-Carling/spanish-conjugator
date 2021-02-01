@@ -1,49 +1,49 @@
 # -*- coding: iso-8859-15 -*-
-def indicitive_past_perfect(root_verb, pronoun):
+def indicative_future_perfect(root_verb, pronoun):
     if pronoun == "yo":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "había " + conjugation
+            return "habré " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "había " + conjugation
-            
+            return "habré " + conjugation
+
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habías " + conjugation
+            return "habrás " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habías " + conjugation
+            return "habrás " + conjugation
 
     if pronoun == "usted":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "había " + conjugation
+            return "habrá " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "había " + conjugation
+            return "habrá " + conjugation
 
     if pronoun == "nosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habíamos " + conjugation
+            return "habremos " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habíamos " + conjugation
+            return "habremos " + conjugation
 
     if pronoun == "vosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habíais " + conjugation
+            return "habréis " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habíais " + conjugation
+            return "habréis " + conjugation
 
     if pronoun == "ustedes":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habían " + conjugation
+            return "habrán " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habían " + conjugation
+            return "habrán " + conjugation

@@ -15,7 +15,7 @@ A class Conjugator containing a function conjugate which conjugates spanish verb
 Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively  
 ```python
 from spanishconjugator import Conjugator
-imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicitive','yo')
+imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicative','yo')
 print(imperfect_conjugation)
 >>> hablaba
 ```
@@ -26,53 +26,53 @@ All pronouns are implemented
 ```yo, tu, usted, nosotros, vosotros, ustedes```
 
 All moods currently implemented are
-```indicitive, conditional```
+```indicative, conditional```
 
 All tenses currently implemented are
 ```present, imperfect, preterite, future, present_perfect, past_anterior, future_perfect, conditional_simple```
 
 Exaple usage of different moods/tenses with hablar and yo
 
-### Indicitive Present
+### Indicative Present
 
 ```python
-Conjugator().conjugate('hablar','present','indicitive','yo')
+Conjugator().conjugate('hablar','present','indicative','yo')
 >>> hablo
 ```
-### Indicitive Imperfect
+### Indicative Imperfect
 
 ```python
-Conjugator().conjugate('hablar','imperfect','indicitive','yo')
+Conjugator().conjugate('hablar','imperfect','indicative','yo')
 >>> hablaba
 ```
-### Indicitive Preterite
+### Indicative Preterite
 
 ```python
-Conjugator().conjugate('hablar','preterite','indicitive','yo')
+Conjugator().conjugate('hablar','preterite','indicative','yo')
 >>> hablé
 ```
-### Indicitive Future
+### Indicative Future
 
 ```python
-Conjugator().conjugate('hablar','future','indicitive','yo')
+Conjugator().conjugate('hablar','future','indicative','yo')
 >>> hablaré
 ```
-### Indicitive Present_Perfect
+### Indicative Present_Perfect
 
 ```python
-Conjugator().conjugate('hablar','present_perfect','indicitive','yo')
+Conjugator().conjugate('hablar','present_perfect','indicative','yo')
 >>> he hablado
 ```
-### Indicitive Past_Anterior
+### Indicative Past_Anterior
 
 ```python
-Conjugator().conjugate('hablar','past_anterior','indicitive','yo')
+Conjugator().conjugate('hablar','past_anterior','indicative','yo')
 >>> hube hablado
 ```
-### Indicitive Future_Perfect
+### Indicative Future_Perfect
 
 ```python
-Conjugator().conjugate('hablar','future_perfect','indicitive','yo')
+Conjugator().conjugate('hablar','future_perfect','indicative','yo')
 >>> habré hablado
 ```
 ### Conditional Simple

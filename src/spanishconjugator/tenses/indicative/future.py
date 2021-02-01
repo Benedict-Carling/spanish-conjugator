@@ -1,5 +1,5 @@
 # -*- coding: iso-8859-15 -*-
-def indicitive_future(root_verb, pronoun):
+def indicative_future(root_verb, pronoun):
     if pronoun == "yo":
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "é"

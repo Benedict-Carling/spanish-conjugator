@@ -2,7 +2,7 @@
 import spanishconjugator
 from spanishconjugator.SpanishConjugator import Conjugator
 
-# ----------------------------------- Present Indicitive ----------------------------------- #
+# ----------------------------------- Present Imperative ----------------------------------- #
 
 def test_negative_imperitive_tu_ar():
     expected = "hables"
