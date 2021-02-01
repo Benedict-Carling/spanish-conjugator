@@ -87,16 +87,16 @@ Conjugator().conjugate('hablar','simple_conditional','conditional','yo')
 Conjugator().conjugate('hablar','perfect','conditional','yo')
 >>> habría hablado
 ```
-### Imperitive Afferative
+### Imperative Afferative
 
 ```python
-Conjugator().conjugate('hablar','affirmative','imperitive','tu')
+Conjugator().conjugate('hablar','affirmative','imperative','tu')
 >>> habla
 ```
-### Imperitive Negative
+### Imperative Negative
 
 ```python
-Conjugator().conjugate('hablar','negative','imperitive','tu')
+Conjugator().conjugate('hablar','negative','imperative','tu')
 >>> hables
 ```
 ### Subjunctive Present

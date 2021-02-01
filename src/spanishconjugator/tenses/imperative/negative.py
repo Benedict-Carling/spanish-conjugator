@@ -1,7 +1,7 @@
 # -*- coding: iso-8859-15 -*-
 def negative(root_verb, pronoun):
     if pronoun == "yo":
-        return "prounoun 'yo' does not have imperitive conjugations"
+        return "prounoun 'yo' does not have imperative conjugations"
             
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
