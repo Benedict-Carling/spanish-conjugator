@@ -2,7 +2,7 @@
 import spanishconjugator
 from spanishconjugator.SpanishConjugator import Conjugator
 
-# ----------------------------------- Present Indicitive ----------------------------------- #
+# ----------------------------------- Imperfect Subjunctive ----------------------------------- #
 
 def test_imperfect_se_subjunctive_yo_ar():
     expected = "hablase"

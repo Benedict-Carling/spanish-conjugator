@@ -2,7 +2,7 @@
 import spanishconjugator
 from spanishconjugator.SpanishConjugator import Conjugator
 
-# ----------------------------------- Present Indicitive ----------------------------------- #
+# ----------------------------------- Future Subjunctive ----------------------------------- #
 
 def test_future_subjunctive_yo_ar():
     expected = "hablare"

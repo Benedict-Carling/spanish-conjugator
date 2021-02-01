@@ -2,28 +2,28 @@
 import spanishconjugator
 from spanishconjugator.SpanishConjugator import Conjugator
 
-# ----------------------------------- Future Preterite Indicitive ----------------------------------- #
+# ----------------------------------- Future Preterite Indicative ----------------------------------- #
 
-def test_preterite_indicitive_yo_ar():
+def test_preterite_indicative_yo_ar():
     expected = "hablé"
-    assert Conjugator().conjugate('hablar','preterite','indicitive','yo') == expected
+    assert Conjugator().conjugate('hablar','preterite','indicative','yo') == expected
 
-def test_preterite_indicitive_tu_ar():
+def test_preterite_indicative_tu_ar():
     expected = "hablaste"
-    assert Conjugator().conjugate('hablar','preterite','indicitive','tu') == expected
+    assert Conjugator().conjugate('hablar','preterite','indicative','tu') == expected
 
-def test_preterite_indicitive_usted_ar():
+def test_preterite_indicative_usted_ar():
     expected = "habló"
-    assert Conjugator().conjugate('hablar','preterite','indicitive','usted') == expected
+    assert Conjugator().conjugate('hablar','preterite','indicative','usted') == expected
 
-def test_preterite_indicitive_nosotros_ar():
+def test_preterite_indicative_nosotros_ar():
     expected = 'hablamos'
-    assert str(Conjugator().conjugate('hablar','preterite','indicitive','nosotros')) == expected
+    assert str(Conjugator().conjugate('hablar','preterite','indicative','nosotros')) == expected
 
-def test_preterite_indicitive_vosotros_ar():
+def test_preterite_indicative_vosotros_ar():
     expected = "hablasteis"
-    assert Conjugator().conjugate('hablar','preterite','indicitive','vosotros') == expected
+    assert Conjugator().conjugate('hablar','preterite','indicative','vosotros') == expected
 
-def test_preterite_indicitive_ustedes_ar():
+def test_preterite_indicative_ustedes_ar():
     expected = "hablaron"
-    assert Conjugator().conjugate('hablar','preterite','indicitive','ustedes') == expected
+    assert Conjugator().conjugate('hablar','preterite','indicative','ustedes') == expected
