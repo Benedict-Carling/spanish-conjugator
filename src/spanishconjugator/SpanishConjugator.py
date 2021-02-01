@@ -117,19 +117,19 @@ class Conjugator():
                     conjugation = conditional_perfect(root_verb, pronoun)
                     return conjugation
 
-# --------------------------------- The Imperitive ----------------------------------------- #
+# --------------------------------- The Imperative ----------------------------------------- #
 
-#---------------------------------- Affirmative Imperitive -------------------------------------- #
+#---------------------------------- Affirmative Imperative -------------------------------------- #
 
             if tense == "affirmative":
-                if mood == "imperitive":
+                if mood == "imperative":
                     conjugation = affirmative(root_verb, pronoun)
                     return conjugation
 
-#---------------------------------- Negative Imperitive -------------------------------------- #
+#---------------------------------- Negative Imperative -------------------------------------- #
 
             if tense == "negative":
-                if mood == "imperitive":
+                if mood == "imperative":
                     conjugation = negative(root_verb, pronoun)
                     return conjugation
 
