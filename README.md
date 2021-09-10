@@ -12,7 +12,7 @@ A class Conjugator containing a function conjugate which conjugates spanish verb
 `pip install spanishconjugator`
 
 ## Example usage
-Example python usage; the conjugate function of the Conjugator Class takes 4 parameters being root-verb, tense, mood, pronoun respectively.
+Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively
 
 ```python
 from spanishconjugator import Conjugator
