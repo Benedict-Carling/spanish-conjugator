@@ -12,14 +12,14 @@ A class Conjugator containing a function conjugate which conjugates spanish verb
 `pip install spanishconjugator`
 
 ## Example usage
-Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively  
+Example python usage; the `conjugate` function of the `Conjugator` Class takes 4 parameters being root-verb, tense, mood, pronoun respectively
+
 ```python
 from spanishconjugator import Conjugator
 imperfect_conjugation = Conjugator().conjugate('hablar','imperfect','indicative','yo')
 print(imperfect_conjugation)
 >>> hablaba
 ```
-
 ## Tenses, Moods and Pronouns implemented
 
 All pronouns are implemented
@@ -39,6 +39,15 @@ Exaple usage of different moods/tenses with hablar and yo
 Conjugator().conjugate('hablar','present','indicative','yo')
 >>> hablo
 ```
+
+In case of indicative present, 4th param pronoun is optional.
+```python
+from spanishconjugator import Conjugator
+present_indicative_conjugation = Conjugator().conjugate('hablar','present','indicative')
+print(present_indicative_conjugation)
+>>> {'el/ella/usted': 'habla', 'ellos/ellas/ustedes': 'hablan', 'tu': 'hablas', 'vosotros': 'hablÃ¡is', 'yo': 'hablo', 'nosotros': 'hablamos'}
+```
+
 ### Indicative Imperfect
 
 ```python
