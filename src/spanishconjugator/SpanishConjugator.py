@@ -31,10 +31,11 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 
 class Conjugator():
 
-    def conjugate(self,root_verb,tense,mood,pronoun):
+    def conjugate(self,root_verb,tense,mood,pronoun=None):
         tense = tense.lower()
         mood = mood.lower()
-        pronoun = pronoun.lower()
+        if pronoun:
+            pronoun = pronoun.lower()
 
         try: 
             conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
@@ -45,7 +46,6 @@ class Conjugator():
 # --------------------------------- The Indicatives ---------------------------------------- #
 
 # --------------------------------- Present Indicative ------------------------------------- #
-
             if tense == "present":
                 if mood == "indicative":
                     conjugation = indicative_present(root_verb, pronoun)
