@@ -38,9 +38,12 @@ class Conjugator():
             pronoun = pronoun.lower()
 
         try: 
-            conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-            return conjugation
-
+            if pronoun:
+                conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                return conjugation
+            else:
+                conjugation = irregulars_dictionary[root_verb][mood][tense]
+                return conjugation
         except:
 
 # --------------------------------- The Indicatives ---------------------------------------- #
