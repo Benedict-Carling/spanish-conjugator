@@ -9,7 +9,7 @@ def indicative_future(root_verb, pronoun):
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ás"
             return conjugation
-            
+
     if pronoun == "usted":
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "á"

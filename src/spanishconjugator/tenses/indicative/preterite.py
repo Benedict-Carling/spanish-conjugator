@@ -8,7 +8,7 @@ def indicative_preterite(root_verb, pronoun):
             conjugation = root_verb[:-2] + "í"
             return conjugation
     if pronoun == "tu":
-        
+
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aste"
             return conjugation

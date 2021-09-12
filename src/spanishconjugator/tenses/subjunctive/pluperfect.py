@@ -7,7 +7,7 @@ def subjunctive_pluperfect(root_verb, pronoun):
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
             return "hubiera " + conjugation
-            
+
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
