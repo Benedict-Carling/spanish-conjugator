@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: "7 9,14,20 * * *"
 
 jobs:
   bump-version:
@@ -43,10 +45,16 @@ jobs:
       run: |
         bump2version --current-version $(python setup.py --version ) patch setup.py
 
-    - name: Commit version change to master
+    - name: Commit version change to master - Push
       run: |
         git commit -am "[skip ci]Automated version bump"
         git push
+      if: github.event_name == 'push'
+    - name: Commit version change to master - Cron
+      run: |
+        git commit -am "Automated version bump"
+        git push
+      if: github.event_name == 'schedule'
     - name: Build and publish
       env:
         TWINE_USERNAME: __token__
