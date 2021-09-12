@@ -31,7 +31,7 @@ jobs:
       run: |
         git config user.name "Benedict-Carling"
         git config user.email 'Benedict-Carling@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/spanish-conjugator
+        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/Benedict-Carling/spanish-conjugator
         git checkout "${GITHUB_REF:11}"
     - name: Install dependencies
       run: |
