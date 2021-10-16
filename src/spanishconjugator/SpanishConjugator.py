@@ -42,158 +42,163 @@ class Conjugator:
     def conjugate(self, root_verb, tense, mood, pronoun=None):
         tense = tense.lower()
         mood = mood.lower()
-        if pronoun:
-            pronoun = pronoun.lower()
-
         try:
             if pronoun:
-                conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
-                return conjugation
+                pronoun = pronoun.lower()
+
+                try:
+                    conjugation = irregulars_dictionary[root_verb][mood][tense][pronoun]
+                    return conjugation
+                except:
+                    # root_verb does not have an irregular conjugation with the given pronoun
+                    return self.conjugate_tense_mood(root_verb, tense, mood, pronoun)
             else:
-                conjugation = irregulars_dictionary[root_verb][mood][tense]
-                return conjugation
+                # in case no pronoun is passed
+              return self.conjugate_tense_mood(root_verb, tense, mood, None)     
+
         except:
+            # --------------------------------- Catch Missed Conjugations ------------------------------- #
+            return "Error - verb not found"
+                
 
-            # --------------------------------- The Indicatives ---------------------------------------- #
+    def conjugate_tense_mood(self, root_verb, tense, mood, pronoun=None):
+        # --------------------------------- The Indicatives ---------------------------------------- #
 
-            # --------------------------------- Present Indicative ------------------------------------- #
-            if tense == "present":
-                if mood == "indicative":
-                    conjugation = indicative_present(root_verb, pronoun)
-                    return conjugation
+        # --------------------------------- Present Indicative ------------------------------------- #
+                    if tense == "present":
+                        if mood == "indicative":
+                            conjugation = indicative_present(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- Imperfect Indicative ----------------------------------- #
+        # --------------------------------- Imperfect Indicative ----------------------------------- #
 
-            if tense == "imperfect":
-                if mood == "indicative":
-                    conjugation = indicative_imperfect(root_verb, pronoun)
-                    return conjugation
+                    if tense == "imperfect":
+                        if mood == "indicative":
+                            conjugation = indicative_imperfect(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- Preterite Indicative ----------------------------------- #
+        # --------------------------------- Preterite Indicative ----------------------------------- #
+                    
+                    if tense == "preterite":
+                        if mood == "indicative":
+                            conjugation = indicative_preterite(root_verb, pronoun)
+                            return conjugation
 
-            if tense == "preterite":
-                if mood == "indicative":
-                    conjugation = indicative_preterite(root_verb, pronoun)
-                    return conjugation
+        # --------------------------------- Future Simple Indicative ------------------------------- #
+                    
+                    if tense == "future":
+                        if mood == "indicative":
+                            conjugation = indicative_future(root_verb, pronoun)
+                            return conjugation
+                            
+        # --------------------------------- Present Perfect Compound Tense -------------------------- #
+                    
+                    if tense == "present_perfect":
+                        if mood == "indicative":
+                            conjugation = indicative_present_perfect(root_verb, pronoun)
+                            return conjugation
+                            
+        # --------------------------------- Past Perfect Compound Tense ----------------------------- #
 
-            # --------------------------------- Future Simple Indicative ------------------------------- #
+                    if tense == "past_perfect":
+                        if mood == "indicative":
+                            conjugation = indicative_past_perfect(root_verb, pronoun)
+                            return conjugation
+                        
+        # --------------------------------- Past Anterior Compound Tense ---------------------------- #
 
-            if tense == "future":
-                if mood == "indicative":
-                    conjugation = indicative_future(root_verb, pronoun)
-                    return conjugation
+                    if tense == "past_anterior":
+                        if mood == "indicative":
+                            conjugation = indicative_past_anterior(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- Present Perfect Compound Tense -------------------------- #
+        # --------------------------------- Future Perfect Compound Tense --------------------------- #
 
-            if tense == "present_perfect":
-                if mood == "indicative":
-                    conjugation = indicative_present_perfect(root_verb, pronoun)
-                    return conjugation
+                    if tense == "future_perfect":
+                        if mood == "indicative":
+                            conjugation = indicative_future_perfect(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- Past Perfect Compound Tense ----------------------------- #
 
-            if tense == "past_perfect":
-                if mood == "indicative":
-                    conjugation = indicative_past_perfect(root_verb, pronoun)
-                    return conjugation
+        # --------------------------------- The Conditional ----------------------------------------- #
 
-            # --------------------------------- Past Anterior Compound Tense ---------------------------- #
+        #---------------------------------- Simple Conditional -------------------------------------- #
 
-            if tense == "past_anterior":
-                if mood == "indicative":
-                    conjugation = indicative_past_anterior(root_verb, pronoun)
-                    return conjugation
+                    if tense == "simple_conditional":
+                        if mood == "conditional":
+                            conjugation = conditional_simple_conditional(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- Future Perfect Compound Tense --------------------------- #
+        #---------------------------------- Perfect Conditional -------------------------------------- #
 
-            if tense == "future_perfect":
-                if mood == "indicative":
-                    conjugation = indicative_future_perfect(root_verb, pronoun)
-                    return conjugation
+                    if tense == "perfect":
+                        if mood == "conditional":
+                            conjugation = conditional_perfect(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- The Conditional ----------------------------------------- #
+        # --------------------------------- The Imperative ----------------------------------------- #
 
-            # ---------------------------------- Simple Conditional -------------------------------------- #
+        #---------------------------------- Affirmative Imperative -------------------------------------- #
 
-            if tense == "simple_conditional":
-                if mood == "conditional":
-                    conjugation = conditional_simple_conditional(root_verb, pronoun)
-                    return conjugation
+                    if tense == "affirmative":
+                        if mood == "imperative":
+                            conjugation = affirmative(root_verb, pronoun)
+                            return conjugation
 
-            # ---------------------------------- Perfect Conditional -------------------------------------- #
+        #---------------------------------- Negative Imperative -------------------------------------- #
 
-            if tense == "perfect":
-                if mood == "conditional":
-                    conjugation = conditional_perfect(root_verb, pronoun)
-                    return conjugation
+                    if tense == "negative":
+                        if mood == "imperative":
+                            conjugation = negative(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- The Imperative ----------------------------------------- #
+        # --------------------------------- The Subjunctive ----------------------------------------- #
 
-            # ---------------------------------- Affirmative Imperative -------------------------------------- #
+        #---------------------------------- Present Subjunctive ------------------------------------- #
 
-            if tense == "affirmative":
-                if mood == "imperative":
-                    conjugation = affirmative(root_verb, pronoun)
-                    return conjugation
+                    if tense == "present":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_present(root_verb, pronoun)
+                            return conjugation
 
-            # ---------------------------------- Negative Imperative -------------------------------------- #
+        #---------------------------------- Present Perfect Subjunctive ----------------------------- #
 
-            if tense == "negative":
-                if mood == "imperative":
-                    conjugation = negative(root_verb, pronoun)
-                    return conjugation
+                    if tense == "present_perfect":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_present_perfect(root_verb, pronoun)
+                            return conjugation
 
-            # --------------------------------- The Subjunctive ----------------------------------------- #
+        #---------------------------------- Pluperfect Subjunctive ---------------------------------- #
 
-            # ---------------------------------- Present Subjunctive ------------------------------------- #
+                    if tense == "pluperfect":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_pluperfect(root_verb, pronoun)
+                            return conjugation
 
-            if tense == "present":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_present(root_verb, pronoun)
-                    return conjugation
+        #---------------------------------- Future Perfect Subjunctive ------------------------------ #
 
-            # ---------------------------------- Present Perfect Subjunctive ----------------------------- #
+                    if tense == "future_perfect":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_future_perfect(root_verb, pronoun)
+                            return conjugation
 
-            if tense == "present_perfect":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_present_perfect(root_verb, pronoun)
-                    return conjugation
+        #---------------------------------- Imperfect Subjunctive -------------------------------------- #
 
-            # ---------------------------------- Pluperfect Subjunctive ---------------------------------- #
+                    if tense == "imperfect":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_imperfect(root_verb, pronoun)
+                            return conjugation
 
-            if tense == "pluperfect":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_pluperfect(root_verb, pronoun)
-                    return conjugation
+        #---------------------------------- imperfect se Subjunctive -------------------------------------- #
 
-            # ---------------------------------- Future Perfect Subjunctive ------------------------------ #
+                    if tense == "imperfect_se":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_imperfect_se(root_verb, pronoun)
+                            return conjugation
 
-            if tense == "future_perfect":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_future_perfect(root_verb, pronoun)
-                    return conjugation
+        #---------------------------------- Future Subjunctive -------------------------------------- #
 
-            # ---------------------------------- Imperfect Subjunctive -------------------------------------- #
-
-            if tense == "imperfect":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_imperfect(root_verb, pronoun)
-                    return conjugation
-
-            # ---------------------------------- imperfect se Subjunctive -------------------------------------- #
-
-            if tense == "imperfect_se":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_imperfect_se(root_verb, pronoun)
-                    return conjugation
-
-            # ---------------------------------- Future Subjunctive -------------------------------------- #
-
-            if tense == "future":
-                if mood == "subjunctive":
-                    conjugation = subjunctive_future(root_verb, pronoun)
-                    return conjugation
-
-        # --------------------------------- Catch Missed Conjugations ------------------------------- #
-
-        return "Error - verb not found"
+                    if tense == "future":
+                        if mood == "subjunctive":
+                            conjugation = subjunctive_future(root_verb, pronoun)
+                            return conjugation
