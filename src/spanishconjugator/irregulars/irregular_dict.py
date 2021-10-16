@@ -369,25 +369,5 @@ irregulars_dictionary = {
                 "ustedes": "cierran"
             }
         }
-    },
-    "haber": {
-        "indicative": {
-            "present": {
-                'yo':haber_present[0],
-                'tu':haber_present[1],
-                'usted':haber_present[2],
-                'nosotros':haber_present[3],
-                'vosotros':haber_present[4],
-                'ustedes':haber_present[5]
-            },
-            "preterite": {
-                'yo':haber_past[0],
-                'tu':haber_past[1],
-                'usted':haber_past[2],
-                'nosotros':haber_past[3],
-                'vosotros':haber_past[4],
-                'ustedes':haber_past[5]
-            }
-        }
     }
 }
