@@ -1,69 +1,94 @@
 # -*- coding: iso-8859-15 -*-
+from spanishconjugator.irregulars.irregular_dict              import irregulars_dictionary
 def indicative_present_first_person_singular(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "o"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["yo"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "o"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "o"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "o"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "o"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "o"
+            return conjugation
 
 def indicative_present_first_person_plural(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "amos"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["nosotros"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "emos"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "imos"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "amos"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "emos"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "imos"
+            return conjugation
 
 def indicative_present_second_person_singular(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "as"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["tu"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "es"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "es"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "as"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "es"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "es"
+            return conjugation
 
 def indicative_present_second_person_plural(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "áis"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["vosotros"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "éis"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "ís"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "áis"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "éis"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "ís"
+            return conjugation
 
 def indicative_present_third_person_singular(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "a"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["usted"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "e"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "e"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "a"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "e"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "e"
+            return conjugation
 
 def indicative_present_third_person_plural(root_verb):
-    if root_verb[-2:] == "ar":
-        conjugation = root_verb[:-2] + "an"
+    try:
+        conjugation = irregulars_dictionary[root_verb]["indicative"]["present"]["ustedes"]
         return conjugation
-    if root_verb[-2:] == "er":
-        conjugation = root_verb[:-2] + "en"
-        return conjugation
-    if root_verb[-2:] == "ir":
-        conjugation = root_verb[:-2] + "en"
-        return conjugation
+    except:
+        if root_verb[-2:] == "ar":
+            conjugation = root_verb[:-2] + "an"
+            return conjugation
+        if root_verb[-2:] == "er":
+            conjugation = root_verb[:-2] + "en"
+            return conjugation
+        if root_verb[-2:] == "ir":
+            conjugation = root_verb[:-2] + "en"
+            return conjugation
 
 def indicative_present(root_verb, pronoun):
     if pronoun == "yo":
