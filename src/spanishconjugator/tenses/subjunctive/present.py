@@ -10,7 +10,7 @@ def subjunctive_present(root_verb, pronoun):
         if root_verb[-2:] == "ir":
             conjugation = root_verb[:-2] + "a"
             return conjugation
-            
+
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "es"

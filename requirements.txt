@@ -1,3 +1,9 @@
-# requirements are located in setup.py.
-# This file is present as docker build
-# searches for requirements.txt file
+attrs==21.2.0
+iniconfig==1.1.1
+packaging==21.0
+pluggy==1.0.0
+py==1.10.0
+pyparsing==2.4.7
+pytest==6.2.5
+toml==0.10.2
+wheel==0.37.0

@@ -7,7 +7,7 @@ def subjunctive_present_perfect(root_verb, pronoun):
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
             return "haya " + conjugation
-            
+
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"

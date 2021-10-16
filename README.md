@@ -4,6 +4,7 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/spanishconjugator)
 ![GitHub top language](https://img.shields.io/github/languages/top/Benedict-Carling/spanish-conjugator)
 ![GitHub](https://img.shields.io/github/license/Benedict-Carling/spanish-conjugator)
+![PyPI](https://img.shields.io/pypi/v/spanishconjugator)
 
 
 A class Conjugator containing a function conjugate which conjugates spanish verbs by tense, mood and pronoun. 
