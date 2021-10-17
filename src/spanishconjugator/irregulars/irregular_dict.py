@@ -106,7 +106,7 @@ irregulars_dictionary = {
             'preterite':{
                 'yo':'vi',
                 'tu':'viste',
-                'usted':'viste',
+                'usted':'vio',
                 'nosotros':'vimos',
                 'vosotros':'visteis',
                 'ustedes':'vieron'
