@@ -105,7 +105,7 @@ irregulars_dictionary = {
             },
             'preterite':{
                 'yo':'vi',
-                'tu':'vistes',
+                'tu':'viste',
                 'usted':'viste',
                 'nosotros':'vimos',
                 'vosotros':'visteis',
@@ -370,7 +370,7 @@ irregulars_dictionary = {
             }
         }
     },
-    "haber": {
+     "haber": {
         "indicative": {
             "present": {
                 'yo':haber_present[0],
@@ -381,12 +381,12 @@ irregulars_dictionary = {
                 'ustedes':haber_present[5]
             },
             "preterite": {
-                'yo':haber_past[0],
-                'tu':haber_past[1],
-                'usted':haber_past[2],
-                'nosotros':haber_past[3],
-                'vosotros':haber_past[4],
-                'ustedes':haber_past[5]
+                'yo':"hube",
+                'tu':"hubiste",
+                'usted':"hubo",
+                'nosotros':"hubimos",
+                'vosotros':"hubisteis",
+                'ustedes':"hubieron"
             }
         }
     }
