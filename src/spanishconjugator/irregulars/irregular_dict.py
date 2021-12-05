@@ -320,6 +320,19 @@ irregulars_dictionary = {
     },
     "decir": {
         "indicative": {
+            'present': {
+                'yo': "digo",
+                'tu': "dices",
+                'usted': "dice",
+                'ustedes': "dicen"
+            },
+            'preterite': {
+                'yo': "dije",
+                'tu': "dijiste",
+                'usted': "dijo",
+                'nosotros': "dijimos",
+                'ustedes': "dijeron"
+            },
             'present_perfect' : {
                 'yo':haber_present[0] + SPACE + participle["past"]["decir"],
                 'tu':haber_present[1] + SPACE + participle["past"]["decir"],
@@ -389,5 +402,6 @@ irregulars_dictionary = {
                 'ustedes':"hubieron"
             }
         }
-    }
+    },
+
 }
