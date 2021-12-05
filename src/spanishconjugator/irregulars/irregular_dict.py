@@ -403,5 +403,12 @@ irregulars_dictionary = {
             }
         }
     },
+    "salir": {
+        "indicative": {
+            "present": {
+                'yo':"salgo",
+            }
+        }
+    }
 
 }
