@@ -409,6 +409,49 @@ irregulars_dictionary = {
                 'yo':"salgo",
             }
         }
-    }
+    },
+    'hacer':{
+        'indicative':{
+            'present':{
+                'yo':'hago'
+            },
+            'preterite':{
+                'yo':'hice',
+                'tu':'hiciste',
+                'usted':'hizo',
+                'nosotros':'hicimos',
+                'vosotros':'hicisteis',
+                'ustedes':'hicieron'
+            }, 
+            'future' : {
+                'yo':'haré',
+                'tu':'harás',
+                'usted':'hará',
+                'nosotros':'haremos',
+                'vosotros':'haréis',
+                'ustedes':'harán'
+            }
+        }
+    },
+    "probar": {
+        "indicative": {
+            "present": {
+                "yo": "pruebo",
+                "tu": "pruebas",
+                "usted": "prueba",
+                "ustedes": "prueban"
+            }
+        }
+    },
+    "pensar": {
+        "indicative": {
+            "present": {
+                "yo": "pienso",
+                "tu": "piensas",
+                "usted": "piensa",
+                "ustedes": "piensan"
+            }
+        }
+    },
 
 }
