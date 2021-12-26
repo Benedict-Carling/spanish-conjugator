@@ -453,5 +453,15 @@ irregulars_dictionary = {
             }
         }
     },
+    "encontrar": {
+        "indicative": {
+            "present": {
+                "yo": "encuentro",
+                "tu": "encuentras",
+                "usted": "encuentra",
+                "ustedes": "encuentran"
+            }
+        }
+    },
 
 }
