@@ -206,6 +206,24 @@ irregulars_dictionary = {
                 'nosotros':'tuvimos',
                 'vosotros':'tuvisteis',
                 'ustedes':'tuvieron'
+            },
+            'future':{
+                'yo':'tendré',
+                'tu':'tendrás',
+                'usted':'tendrá',
+                'nosotros':'tendremos',
+                'vosotros':'tendréis',
+                'ustedes':'tendrán'
+            }
+        },
+        'conditional':{
+            'simple_conditional':{
+                'yo':'tendría',
+                'tu':'tendrías',
+                'usted':'tendría',
+                'nosotros':'tendríamos',
+                'vosotros':'tendríais',
+                'ustedes':'tendrían'
             }
         }
     },
