@@ -240,6 +240,16 @@ irregulars_dictionary = {
                 'vosotros':'pudisteis',
                 'ustedes':'pudieron'
             }
+        },
+        'conditional':{
+            'simple_conditional':{
+                'yo':'podría',
+                'tu':'podrías',
+                'usted':'podría',
+                'ustedes':'podrían',
+                'nosotros': 'podríamos',
+                'vosotros': 'podríais'
+            },
         }
     },
     'pedir':{
@@ -349,6 +359,16 @@ irregulars_dictionary = {
                 'vosotros':haber_past[4] + SPACE + participle["past"]["decir"],
                 'ustedes':haber_past[5] + SPACE + participle["past"]["decir"]
             }
+        },
+        'conditional':{
+            'simple_conditional':{
+                'yo':'diría',
+                'tu':'dirías',
+                'usted':'diría',
+                'ustedes':'dirían',
+                'nosotros': 'diríamos',
+                'vosotros': 'diríais'
+            },
         }
         
     },
