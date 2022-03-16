@@ -162,7 +162,25 @@ irregulars_dictionary = {
                 'nosotros':'vinimos',
                 'vosotros':'vinisteis',
                 'ustedes':'vinieron'
+            },
+            'future' : {
+                'yo':'vendré',
+                'tu':'vendrás',
+                'usted':'vendrá',
+                'nosotros':'vendremos',
+                'vosotros':'vendréis',
+                'ustedes':'vendrán'
             }
+        },
+        'conditional':{
+            'simple_conditional':{
+                'yo':'vendría',
+                'tu':'vendrías',
+                'usted':'vendría',
+                'ustedes':'vendrían',
+                'nosotros': 'vendríamos',
+                'vosotros': 'vendríais'
+            },
         }
     },
     'volver':{
@@ -239,6 +257,14 @@ irregulars_dictionary = {
                 'nosotros':'supimos',
                 'vosotros':'supisteis',
                 'ustedes':'supieron'
+            },
+            'future':{
+                'yo':'sabré',
+                'tu':'sabrás',
+                'usted':'sabrá',
+                'nosotros':'sabremos',
+                'vosotros':'sabréis',
+                'ustedes':'sabrán'
             }
         }
     },
@@ -277,8 +303,12 @@ irregulars_dictionary = {
                 'tu':'pides',
                 'usted':'pide',
                 'ustedes':'piden'
+            },
+            'preterite': {
+                'usted': 'pidió',
+                'ustedes': 'pidieron'
             }
-        }
+        },
     },
     'querer':{
         'indicative':{
@@ -501,5 +531,98 @@ irregulars_dictionary = {
             }
         }
     },
+    "seguir": {
+        "indicative": {
+            "present": {
+                "yo": "sigo",
+                "tu": "sigues",
+                "usted": "sigue",
+                "ustedes": "siguen"
+            }
+        }
+    },
+    "llover": {
+        "indicative": {
+            "present": {
+                "yo": "lluevo",
+                "tu": "llueves",
+                "usted": "llueve",
+                "ustedes": "llueven"
+            }
+        }
+    },
+    "oír": {
+        "indicative": {
+            "present": {
+                "yo": "oigo",
+                "tu": "oyes",
+                "usted": "oye",
+                "ustedes": "oyen",
+                "nosotros": "oímos"
+            }, 
+            "preterite": {
+                "tu": "oíste",
+                "usted": "oyó",
+                "ustedes": "oyeron"
+            }
+        }
+    },
+    "continuar": {
+        "indicative": {
+            "present": {
+                "yo": "continúo",
+                "tu": "continúas",
+                "usted": "continúa",
+                "ustedes": "continúan"
+            }
+        }
+    },
+     "doler": {
+        "indicative": {
+            "present": {
+                "yo": "duelo",
+                "tu": "dueles",
+                "usted": "duele",
+                "ustedes": "duelen"
+            }
+        }
+    },
+    "dar": {
+        "indicative": {
+            "present": {
+                "yo": "doy"
+            }, 
+            "preterite": {
+                "yo": "di",
+                "tu": "diste",
+                "usted": "dio",
+                "ustedes": "dieron",
+                "nosotros": "dimos"
+            }
+        }
+    },
+    "recordar": {
+        "indicative": {
+            "present": {
+                "yo": "recuerdo",
+                "tu": "recuerdas",
+                "usted": "recuerda",
+                "ustedes": "recuerdan"
+            }
+        }
+    },
+    "comenzar": {
+        "indicative": {
+            "present": {
+                "yo": "comienzo",
+                "tu": "comienzas",
+                "usted": "comienza",
+                "ustedes": "comienzan"
+            }, 
+            "preterite": {
+                "yo": "comencé"
+            }
+        }
+    }
 
 }
